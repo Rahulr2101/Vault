@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:basic_utils/basic_utils.dart';
 
 class form extends StatefulWidget {
   const form({super.key});
@@ -32,8 +33,9 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
+              controller: nameController,
               decoration: InputDecoration(
-                  hintText: 'Username',
+                  hintText: 'Name',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(40))),
             )
@@ -43,6 +45,7 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
+              controller: ageController,
               decoration: InputDecoration(
                   hintText: 'Age',
                   border: OutlineInputBorder(
@@ -54,6 +57,7 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
+              controller: aadharController,
               decoration: InputDecoration(
                   hintText: 'Aadhar Number',
                   border: OutlineInputBorder(
@@ -82,17 +86,7 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
-              decoration: InputDecoration(
-                  hintText: 'Aadhar Number',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(40))),
-            )
-          ]),
-        ),
-        Container(
-          padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
-          child: Column(children: [
-            TextField(
+              controller: emailController,
               decoration: InputDecoration(
                   hintText: 'Email id',
                   border: OutlineInputBorder(
@@ -104,6 +98,7 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
+              controller: phoneController,
               decoration: InputDecoration(
                   hintText: 'Phone Number',
                   border: OutlineInputBorder(
@@ -115,6 +110,7 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
+              controller: aadharController,
               decoration: InputDecoration(
                   hintText: 'Address',
                   border: OutlineInputBorder(
@@ -126,6 +122,7 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
+              controller: fatherController,
               decoration: InputDecoration(
                   hintText: 'Father Name',
                   border: OutlineInputBorder(
@@ -137,6 +134,7 @@ class _formState extends State<form> {
           padding: const EdgeInsets.only(left: 20, top: 40, right: 20),
           child: Column(children: [
             TextField(
+              controller: motherController,
               decoration: InputDecoration(
                   hintText: 'Mother Name',
                   border: OutlineInputBorder(
@@ -144,16 +142,22 @@ class _formState extends State<form> {
             )
           ]),
         ),
+        ElevatedButton(
+            onPressed: signIn,
+            child: Text(
+              'Done',
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+            ))
       ]),
     )));
   }
 
   Future<void> signIn() async {
-    await firestoreInstance.collection("users").doc("user1").set({
+    await firestoreInstance.collection("Userdata").doc("user1").set({
       'name': nameController.text.trim(),
       'email': emailController.text.trim(),
-      'age': ageController.text.trim(),
-      'aadhar': aadharController.text.trim(),
+      'age': int.parse(ageController.text.trim()),
+      'aadhar': int.parse(aadharController.text.trim()),
       'blood_group': bloodGroupController.text.trim(),
       'phone': phoneController.text.trim(),
       'address': addressController.text.trim(),
