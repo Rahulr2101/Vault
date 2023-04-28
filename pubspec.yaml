@@ -38,6 +38,8 @@ dependencies:
   firebase_core: ^2.10.0
   basic_utils: ^5.5.3
   cloud_firestore: ^4.5.2
+  geolocator: ^8.2.0
+  geocoding: ^2.0.4
 
 dev_dependencies:
   flutter_test:
