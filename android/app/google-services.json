@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "464996710726",
-    "project_id": "vault-5ad0e",
-    "storage_bucket": "vault-5ad0e.appspot.com"
+    "project_number": "815399387398",
+    "project_id": "vault-2029f",
+    "storage_bucket": "vault-2029f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:464996710726:android:af4b84dad080750c2d8d47",
+        "mobilesdk_app_id": "1:815399387398:android:f8f261f4f5e77d0baa1e87",
         "android_client_info": {
           "package_name": "com.example.vault"
         }
       },
       "oauth_client": [
         {
-          "client_id": "464996710726-kbifgjnu9vq6v7un9fc9m3m3j0fa3vdv.apps.googleusercontent.com",
+          "client_id": "815399387398-ifho9ja7n0vei1noq8hsasr7vk1ed1ci.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBpIU027rRy7xNadm3kiT7xwgqwgLz5pVQ"
+          "current_key": "AIzaSyAlUz3KbcUb0WvmgGMl9J4c6NofKl71jJ0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "464996710726-kbifgjnu9vq6v7un9fc9m3m3j0fa3vdv.apps.googleusercontent.com",
+              "client_id": "815399387398-ifho9ja7n0vei1noq8hsasr7vk1ed1ci.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "464996710726-njhhpdb6ert90fjh5vd49l8k2i3sjobg.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.vault"
-              }
             }
           ]
         }

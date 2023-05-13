@@ -44,39 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDwnx4JHZdygsUVRWh1By8Bqpy8njYRQj4',
-    appId: '1:464996710726:web:053e4c8633b98b972d8d47',
-    messagingSenderId: '464996710726',
-    projectId: 'vault-5ad0e',
-    authDomain: 'vault-5ad0e.firebaseapp.com',
-    storageBucket: 'vault-5ad0e.appspot.com',
+    apiKey: 'AIzaSyDTv8qIkorg108HTJjs2CE3n2tsdNnLVA8',
+    appId: '1:815399387398:web:bb0ab6c32a736dc8aa1e87',
+    messagingSenderId: '815399387398',
+    projectId: 'vault-2029f',
+    authDomain: 'vault-2029f.firebaseapp.com',
+    storageBucket: 'vault-2029f.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBpIU027rRy7xNadm3kiT7xwgqwgLz5pVQ',
-    appId: '1:464996710726:android:af4b84dad080750c2d8d47',
-    messagingSenderId: '464996710726',
-    projectId: 'vault-5ad0e',
-    storageBucket: 'vault-5ad0e.appspot.com',
+    apiKey: 'AIzaSyAlUz3KbcUb0WvmgGMl9J4c6NofKl71jJ0',
+    appId: '1:815399387398:android:f8f261f4f5e77d0baa1e87',
+    messagingSenderId: '815399387398',
+    projectId: 'vault-2029f',
+    storageBucket: 'vault-2029f.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCOrwcEF1K6D6UZ29v9knR2KURM_NDq-eM',
-    appId: '1:464996710726:ios:0d0998f98634ec032d8d47',
-    messagingSenderId: '464996710726',
-    projectId: 'vault-5ad0e',
-    storageBucket: 'vault-5ad0e.appspot.com',
-    iosClientId: '464996710726-njhhpdb6ert90fjh5vd49l8k2i3sjobg.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAeHoUIj9_OqGa_IItlnhmQRWTUTFYbTyA',
+    appId: '1:815399387398:ios:1965ff7e0c9b3b56aa1e87',
+    messagingSenderId: '815399387398',
+    projectId: 'vault-2029f',
+    storageBucket: 'vault-2029f.appspot.com',
+    iosClientId: '815399387398-ks3dkpc97mtbrtduaf8a5eat9hp72hgh.apps.googleusercontent.com',
     iosBundleId: 'com.example.vault',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCOrwcEF1K6D6UZ29v9knR2KURM_NDq-eM',
-    appId: '1:464996710726:ios:0d0998f98634ec032d8d47',
-    messagingSenderId: '464996710726',
-    projectId: 'vault-5ad0e',
-    storageBucket: 'vault-5ad0e.appspot.com',
-    iosClientId: '464996710726-njhhpdb6ert90fjh5vd49l8k2i3sjobg.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAeHoUIj9_OqGa_IItlnhmQRWTUTFYbTyA',
+    appId: '1:815399387398:ios:1965ff7e0c9b3b56aa1e87',
+    messagingSenderId: '815399387398',
+    projectId: 'vault-2029f',
+    storageBucket: 'vault-2029f.appspot.com',
+    iosClientId: '815399387398-ks3dkpc97mtbrtduaf8a5eat9hp72hgh.apps.googleusercontent.com',
     iosBundleId: 'com.example.vault',
   );
 }
